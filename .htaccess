@@ -182,11 +182,11 @@ Deny from all
 
 # Reference : https://www.wordfence.com/blog/2016/12/wordfence-blocks-username-harvesting-via-new-rest-api-wp-4-7/
 # Deaktivate Rest API
-<IfModule mod_rewrite.c>
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^wp-json/(.*)$ / [R=301,NC,L]
-</IfModule>
+# <IfModule mod_rewrite.c>
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^wp-json/(.*)$ / [R=301,NC,L]
+# </IfModule>
 
 
 
@@ -213,14 +213,6 @@ RewriteRule . /index.php [L]
 
 
 
-
-
-#######################
-# Speed & Compression #
-#######################
-
-Header unset ETag
-FileETag None
 
 
 
