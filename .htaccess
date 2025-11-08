@@ -62,11 +62,11 @@ RewriteRule ^wp-includes/theme-compat/ - [F,L]
 
 
 ### Block access to hidden files & directories
-<IfModule mod_rewrite.c>
-    RewriteCond %{SCRIPT_FILENAME} -d [OR]
-    RewriteCond %{SCRIPT_FILENAME} -f
-    RewriteRule "(^|/)\." - [F]
-</IfModule>
+# <IfModule mod_rewrite.c>
+#    RewriteCond %{SCRIPT_FILENAME} -d [OR]
+#    RewriteCond %{SCRIPT_FILENAME} -f
+#    RewriteRule "(^|/)\." - [F]
+# </IfModule>
 
 
 ### Block access to source files
